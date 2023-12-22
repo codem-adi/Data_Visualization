@@ -1,0 +1,33 @@
+.register_parent {
+     padding: 25px;
+}
+
+.inpurt_error {
+     width: 100%;
+     color: red;
+     text-align: left;
+}
+
+.register_form {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-top: 15px;
+}
+
+.form_input_container {
+     font-family: sans-serif;
+     padding: 10px;
+     font-size: 18px;
+     border: 1px solid gray;
+     border-radius: 5px;
+}
+
+.signup_btn {
+     padding: 5px 20px;
+     font-family: sans-serif;
+     font-size: 22px;
+     width: 100%;
+     margin-top: 15px;
+     cursor: pointer;
+}

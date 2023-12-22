@@ -1,0 +1,184 @@
+.home_page {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     gap: 20px;
+     padding: 25px;
+     text-align: center;
+}
+
+.nav_upload {
+     display: flex;
+     justify-content: space-between;
+     align-items: start;
+     width: 100%;
+}
+
+.nav_upload>button {
+     padding: 5px 10px;
+     font-weight: 600;
+     font-family: sans-serif;
+     font-size: 16px;
+     cursor: pointer;
+}
+
+.home_page_heading {
+     font-size: 24px;
+     font-weight: 900;
+     font-family: sans-serif;
+}
+
+.dataset_table {
+     border: 2px solid gray;
+     max-width: 1200px;
+     min-width: 1000px;
+}
+
+
+.table_heading_tr>th {
+     border-right: 2px solid gray;
+     /* border-left: 2px solid gray; */
+}
+
+.table_heading_tr>th:last-child {
+     border-right: none;
+}
+
+.empty_dataset_td {
+     padding: 20px 10px;
+}
+
+.upload_dataset_btn {
+     cursor: pointer;
+     font-size: 14px;
+     padding: 10px 15px;
+     font-weight: 900;
+     font-family: sans-serif;
+     border-radius: 4px;
+}
+
+tbody>tr {
+     border-top: 1px solid gray;
+}
+
+td {
+     border-top: 1px solid gray;
+     border-right: 2px solid gray;
+     font-size: 18px;
+     height: 40px;
+}
+
+tbody>tr>td:last-child {
+     border-right: none;
+}
+
+.delete_dataset,
+.view_dataset {
+     font-size: 16px;
+     padding: 5px 15px;
+     cursor: pointer;
+     width: 80%;
+     font-weight: 600;
+     color: red;
+}
+
+.view_dataset {
+     color: green;
+}
+
+table {
+     border: 1px solid #ccc;
+     border-collapse: collapse;
+     margin: 0;
+     padding: 0;
+     width: 100%;
+     table-layout: fixed;
+}
+
+table caption {
+     font-size: 1.5em;
+     margin: .5em 0 .75em;
+}
+
+table tr {
+     background-color: #f8f8f8;
+     border: 1px solid #ddd;
+     padding: .35em;
+}
+
+table th,
+table td {
+     padding: .625em;
+     text-align: center;
+}
+
+table th {
+     font-size: .85em;
+     letter-spacing: .1em;
+     text-transform: uppercase;
+}
+
+@media only screen and (max-width: 600px) {
+
+     .home_page {
+          padding: 15px 10px;
+     }
+
+     .dataset_table {
+          border: none;
+     }
+
+     td {
+          border-top: none;
+          border-bottom: 2px solid gray;
+          border-right: none;
+     }
+
+     table {
+          border: 0;
+     }
+
+     table caption {
+          font-size: 1.3em;
+     }
+
+     table thead {
+          border: none;
+          clip: rect(0 0 0 0);
+          height: 1px;
+          margin: -1px;
+          overflow: hidden;
+          padding: 0;
+          position: absolute;
+          width: 1px;
+     }
+
+     table tr {
+          border-bottom: 3px solid #ddd;
+          display: block;
+          margin-bottom: .625em;
+     }
+
+     table td {
+          border-bottom: 1px solid #ddd;
+          display: block;
+          font-size: .8em;
+          text-align: right;
+     }
+
+     table td::before {
+          /*
+              * aria-label has no advantage, it won't be read inside a table
+              content: attr(aria-label);
+              */
+          content: attr(data-label);
+          float: left;
+          font-weight: bold;
+          text-transform: uppercase;
+     }
+
+     table td:last-child {
+          border-bottom: 0;
+     }
+}
